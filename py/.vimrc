@@ -1,8 +1,7 @@
-" CTAGS cmd: exuberant-ctags -R --python-kinds=+cf-i --exclude=*.html --exclude=*.js   .
+" CTAGS cmd: exuberant-ctags -R --python-kinds=+cf-i --totals=yes --tag-relative=yes --exclude=*.html --exclude=*.js   .
 set nobackup
 set nowritebackup
 set noswapfile
-set columns=80
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -16,6 +15,9 @@ set ignorecase
 set smartcase
 set encoding=utf-8
 set modifiable
+set number
+set scrolljump=5
+set ruler
 
 let python_highlight_all=1
 
