@@ -19,6 +19,11 @@ set number
 set scrolljump=5
 set ruler
 
+" cmaps for fuzzy finder
+cmap ff FufFile
+cmap fb FufBuffer
+cmap ft FufTag
+
 syntax on
 filetype indent on
 filetype on

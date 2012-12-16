@@ -1,4 +1,4 @@
-" CTAGS cmd: exuberant-ctags -R --python-kinds=+cf-i --totals=yes --tag-relative=yes --exclude=*.html --exclude=*.js   .
+" CTAGS cmd: exuberant-ctags -R --python-kinds=+cf-i --totals=yes --tag-relative=yes --exclude=*.html --exclude=*.js --exclude=*.pyc   .
 set nobackup
 set nowritebackup
 set noswapfile
@@ -20,6 +20,11 @@ set scrolljump=5
 set ruler
 
 let python_highlight_all=1
+
+" cmaps for fuzzy finder
+cmap ff FufFile
+cmap fb FufBuffer
+cmap ft FufTag
 
 syntax on
 filetype indent on
