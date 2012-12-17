@@ -21,6 +21,9 @@ set ruler
 
 let python_highlight_all=1
 
+highlight Pmenu guibg=brown gui=bold
+highlight Pmenu ctermbg=238 gui=bold
+
 " cmaps for fuzzy finder
 cmap ff FufFile
 cmap fb FufBuffer

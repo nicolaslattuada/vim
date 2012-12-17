@@ -19,6 +19,9 @@ set number
 set scrolljump=5
 set ruler
 
+highlight Pmenu guibg=brown gui=bold
+highlight Pmenu ctermbg=238 gui=bold
+
 " cmaps for fuzzy finder
 cmap ff FufFile
 cmap fb FufBuffer
