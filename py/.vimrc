@@ -18,11 +18,12 @@ set modifiable
 set number
 set scrolljump=5
 set ruler
+set tags=tags
 
 let python_highlight_all=1
 
-highlight Pmenu guibg=brown gui=bold
-highlight Pmenu ctermbg=238 gui=bold
+highlight Pmenu ctermbg=13 guibg=LightGray gui=bold
+highlight PmenuSel ctermfg=Yellow ctermbg=DarkBlue cterm=bold,underline
 
 " cmaps for fuzzy finder
 cmap ff FufFile
@@ -39,4 +40,3 @@ highlight BadWhitespace ctermbg=red guibg=red
 au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set textwidth=79
-
