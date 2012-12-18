@@ -24,9 +24,9 @@ highlight Pmenu ctermbg=13 guibg=LightGray gui=bold
 highlight PmenuSel ctermfg=Yellow ctermbg=DarkBlue cterm=bold,underline
 
 " cmaps for fuzzy finder
-cmap ff FufFile
-cmap fb FufBuffer
-cmap ft FufTag
+cmap fuf FufFile
+cmap fub FufBuffer
+cmap fut FufTag
 
 syntax on
 filetype indent on
