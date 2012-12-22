@@ -13,9 +13,12 @@ set listchars=tab:>-
 set listchars+=trail:.
 set ignorecase
 set smartcase
-set encoding=utf-8
+set encoding=utf-8 nobomb " BOM often causes trouble
+set incsearch " Highlight dynamically as pattern is typed.  
+set cursorline " Highlight current line
+set gdefault " By default add g flag to search/replace. Add g to toggle.
 set modifiable
-set number
+set relativenumber
 set scrolljump=5
 set ruler
 set tags=tags
@@ -27,6 +30,9 @@ highlight PmenuSel ctermfg=Yellow ctermbg=DarkBlue cterm=bold,underline
 cmap fuf FufFile
 cmap fub FufBuffer
 cmap fut FufTag
+
+" cmaps for taglist
+cmap tli TlistToggle
 
 syntax on
 filetype indent on
