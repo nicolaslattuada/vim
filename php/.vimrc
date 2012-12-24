@@ -34,6 +34,19 @@ cmap fut FufTag
 " cmaps for taglist
 cmap tli TlistToggle
 
+" Fix stupid upper case mistakes
+if has("user_commands")
+    command! -bang -nargs=* -complete=file W w<bang> <args>
+    command! -bang -nargs=* -complete=file Wq wq<bang> <args>
+    command! -bang -nargs=* -complete=file WQ wq<bang> <args>
+    command! -bang Wa wa<bang>
+    command! -bang WA wa<bang>
+    command! -bang Q q<bang>
+    command! -bang QA qa<bang>
+    command! -bang Qa qa<bang>
+endif
+
+
 syntax on
 filetype indent on
 filetype on
