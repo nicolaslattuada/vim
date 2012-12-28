@@ -52,3 +52,10 @@ filetype indent on
 filetype on
 filetype plugin on
 
+" Use the below highlight group when displaying bad whitespace is desired.
+highlight BadWhitespace ctermbg=red guibg=red
+au BufRead,BufNewFile *.php match BadWhitespace /^\t\+/
+au BufRead,BufNewFile *.php match BadWhitespace /\s\+$/
+
+ab dbx lagger_debug(var_export($var, true));
+ab dbg lagger_debug($var);
