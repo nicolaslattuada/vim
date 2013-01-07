@@ -214,3 +214,16 @@ snippet fun
 # $... = array (...)
 snippet array
 	$${1:arrayName} = array('${2}' => ${3});${4}
+
+# Perso snippets. Debug stuff.
+snippet dbg
+	lagger_debug(${1:var});
+
+snippet dbx
+	lagger_debug(var_export(${1:var}, true));
+
+snippet elo
+	error_log(${1:var});
+
+snippet elx
+	error_log(var_export(${1:var}, true));
