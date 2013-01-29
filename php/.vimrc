@@ -22,6 +22,7 @@ set relativenumber
 set scrolljump=5
 set ruler
 set tags=tags
+set t_Co=256
 
 highlight Pmenu ctermbg=13 guibg=LightGray gui=bold
 highlight PmenuSel ctermfg=Yellow ctermbg=DarkBlue cterm=bold,underline

@@ -22,6 +22,7 @@ set gdefault " By default add g flag to search/replace. Add g to toggle.
 set scrolljump=5
 set ruler
 set tags=tags
+set t_Co=256
 
 let python_highlight_all=1
 
